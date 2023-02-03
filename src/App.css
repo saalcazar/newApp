@@ -1,0 +1,12 @@
+.main{
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.main .title{
+    display: block;
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+}

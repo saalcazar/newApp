@@ -1,0 +1,59 @@
+.main .main-cripto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.main .main-cripto .cripto{
+    width: 260px;
+    padding: .75rem;
+    border: 1px solid;
+    border-radius: 25px;
+}
+
+.main .main-cripto .cripto .name-cripto{
+    font-size: 1.5rem;
+    color: greenyellow;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: .5rem;
+}
+
+.main .main-cripto .cripto .symbol{
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.main .main-cripto .cripto .precio{
+    color: greenyellow;
+}
+
+.main .main-cripto .cripto .precio span{
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+}
+
+.main .main-cripto .cripto .link{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: .5rem 0;
+    text-decoration: none;
+    color: aqua;
+}
+
+.main .main-cripto .cripto .link:hover{
+    text-decoration: underline;
+    color: white;
+}
+
