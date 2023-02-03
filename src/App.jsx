@@ -1,14 +1,26 @@
 import { useEffect, useState } from "react"
+import axios from "axios"
 
 function App() {
+
+  const API_URL = import.meta.env.VITE_API_URL
 
   const [criptos, setCriptos] = useState()
 
   useEffect(() => {
-    fetch("https://api.coincap.io/v2/assets")
-      .then(resp => resp.json())
+    // fetch(`${API_URL}assets`)
+    //   .then(resp => resp.json())
+    //   .then(data => {
+    //     setCriptos(data.data)
+    //   })
+    //   .catch(() => {
+    //     console.error("La petición fallo")
+    //     console.log(`${import.meta.env.VITE_API_URL}assets`)
+    //   })
+
+      axios.get(`${API_URL}assets`)
       .then(data => {
-        setCriptos(data.data)
+        setCriptos(data.data.data)
       })
       .catch(() => {
         console.error("La petición fallo")
@@ -21,9 +33,11 @@ function App() {
     <>
       <h1>Lista de Criptomonedas</h1>
       <ol>
-        {criptos.map(({name, priceUsd}) => (
-          <li>Nombre: {name} Precio: {priceUsd}</li>
-        ))}
+        {
+          criptos.map(({id, name, priceUsd}) => (
+            <li key={id}>Nombre: {name} Precio: {priceUsd}</li>
+          ))
+        }
       </ol>
     </>
   )
