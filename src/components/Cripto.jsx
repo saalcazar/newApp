@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom" //Propio de react router dom
 import "./Cripto.css"
 import usePetition from "../hooks/usePetition"
-import Coin from "./info/coin"
+import Coin from "./info/Coin"
 import History from "./info/History"
 const Cripto = () => {
 
