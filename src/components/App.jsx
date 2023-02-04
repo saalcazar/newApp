@@ -1,5 +1,5 @@
 import { Navigate, Outlet } from "react-router-dom"
-import Menu from "./menu/menu"
+import Menu from "./menu/Menu"
 
 const App = () => {
     if(!localStorage.getItem("tokenCriptos")) return <Navigate to="/login" />
