@@ -1,30 +1,22 @@
 import { useParams } from "react-router-dom" //Propio de react router dom
-import { useEffect, useState } from "react"
-
+import "./Cripto.css"
+import usePetition from "../hooks/usePetition"
+import Coin from "./info/coin"
+import History from "./info/History"
 const Cripto = () => {
 
     const params = useParams()
 
-    const API_URL = import.meta.env.VITE_API_URL
+    const [coin, loadingCoin] = usePetition(`assets/${params.id}`)
+    const [history, loadingHistory] = usePetition(`assets/${params.id}/history?interval=d1`)
 
-    const [coin, setCoin] = useState({})
-
-    useEffect(() => {
-        fetch(`${API_URL}assets/${params.id}`)
-        .then(resp => resp.json())
-        .then(data => {
-            setCoin(data.data)
-        })
-        .catch(
-            console.error("No se pudo conectar")
-        )
-    },[])
+    if(loadingCoin || loadingHistory) return <span>Cargando</span>
 
     return(
-        <>
-            <h1>{coin.name}</h1>
-            <p>{JSON.stringify(coin)}</p>
-        </>
+        <section className="cripto-main">
+        {coin && <Coin coin={coin}/>}
+        {history && <History history={history} />}
+        </section>
     )
 }
 

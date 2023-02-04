@@ -1,0 +1,79 @@
+.cripto-main{
+    padding-top: 60px;
+    width: 950px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.main-coin{
+    position: fixed;
+    left: 3rem;
+}
+
+.main-history{
+    width: 550px;
+    position: absolute;
+    right: 3rem;
+}
+
+.main-coin, .main-history .titulo{
+    font-size: 2.5rem;
+    color: greenyellow;
+    margin-bottom: 1rem;
+}
+
+.main-coin .contenido{
+    width: 100%;
+    border: 1px solid;
+    margin: .75rem auto;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+.main-coin .contenido p{
+    font-size: 1.75rem;
+    font-weight: 200;
+    color: white;
+    margin-bottom: .5rem;
+}
+
+.main-coin .contenido span{
+    color: greenyellow;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.main-coin .contenido p .green{
+    color: rgb(118, 177, 30);
+}
+
+.main-coin .contenido p .red{
+    color: tomato;
+}
+
+.main-history table{
+    width: 100%;
+    margin: auto;
+}
+
+.main-history table td{
+    border: 1px solid white;
+    padding: .75rem;
+    font-weight: 200;
+}
+.main-history table tr{
+    background: rgb(18, 53, 82);
+}
+
+.main-history table .head{
+    color: greenyellow;
+    font-size: 1.5rem;
+}
+
+.main-history table .head th{
+    border: 1px solid white;
+    font-weight: 400;
+    padding: 0.75rem;
+}

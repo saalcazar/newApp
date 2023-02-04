@@ -10,6 +10,11 @@
     padding: .75rem;
     border: 1px solid;
     border-radius: 25px;
+    transition: background-color .3s ease;
+}
+
+.main .main-cripto .cripto:hover{
+    background-color: rgb(18, 53, 82);
 }
 
 .main .main-cripto .cripto .name-cripto{

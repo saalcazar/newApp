@@ -1,0 +1,55 @@
+.login-main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-main h1{
+    color: greenyellow;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.login-main .field{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.login-main .field input{
+    all: unset;
+    border: 1px solid greenyellow;
+    margin-top: 1rem;
+    padding: .25rem;
+    border-radius: 15px;
+    color: white;
+    font-weight: 200;
+}
+
+.login-main .submit input{
+    width: 150px;
+    margin: 2rem auto;
+    background-color: white;
+    color: rgb(13, 56, 92);
+    display: block;
+    text-align: center;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 15px;
+}
+
+.login-main .submit input:hover{
+    background-color: greenyellow;
+}
+
+.login-main .error{
+    color: tomato;
+    font-size: 1.5rem;
+    font-weight: 700;
+}

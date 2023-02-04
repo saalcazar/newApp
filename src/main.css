@@ -17,3 +17,11 @@ a{
     color: white;
     text-decoration: none;
 }
+
+.red{
+    color: tomato;
+}
+
+.green{
+    color: rgb(118, 177, 30);
+}
